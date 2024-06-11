@@ -58,7 +58,7 @@ const Page: NextPage<{ eventData: EventStruct }> = ({ eventData }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="lg:w-2/3 w-full mx-auto bg-white p-5 shadow-md">
+      <main className="lg:w-2/3 w-full mx-auto bg-[#fefae0] rounded p-5 shadow-md">
         <form onSubmit={handleSubmit} className="flex flex-col text-black">
           <div className="flex flex-row justify-between items-center mb-5">
             <p className="font-semibold">Edit Event</p>
@@ -195,7 +195,7 @@ const Page: NextPage<{ eventData: EventStruct }> = ({ eventData }) => {
           <div className="flex space-x-2 mt-5">
             <button
               type="submit"
-              className="bg-orange-500 p-2 rounded-full py-3 px-10
+              className="bg-[#bc6c25] p-2 rounded-full py-3 px-10
             text-white hover:bg-transparent border hover:text-orange-500
             hover:border-orange-500 duration-300 transition-all"
             >
@@ -206,9 +206,9 @@ const Page: NextPage<{ eventData: EventStruct }> = ({ eventData }) => {
               href={'/events/' + event.id}
               type="button"
               className="bg-transparent p-2 rounded-full py-3 px-5
-              text-black hover:bg-orange-500 hover:text-white
+              text-black hover:bg-transparent hover:text-[#bc6c25]
               duration-300 transition-all flex justify-start items-center
-              space-x-2 border border-black hover:border-orange-500"
+              space-x-2 border border-black"
             >
               Back
             </Link>

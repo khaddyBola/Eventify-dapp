@@ -293,7 +293,7 @@ const Page: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="lg:w-2/3 w-full mx-auto bg-white p-5 shadow-md">
+      <main className="lg:w-2/3 w-full rounded-md mx-auto bg-[#fefae0] p-5 shadow-md">
         <form onSubmit={handleSubmit} className="flex flex-col text-black">
           <div className="flex flex-row justify-between items-center mb-5">
             <p className="font-semibold">Create Event</p>
@@ -430,9 +430,9 @@ const Page: NextPage = () => {
           <div className="mt-5">
             <button
               type="submit"
-              className="bg-orange-500 p-2 rounded-full py-3 px-10
-            text-white hover:bg-transparent border hover:text-orange-500
-            hover:border-orange-500 duration-300 transition-all"
+              className="bg-[#bc6c25] p-2 rounded-full py-3 px-10
+              text-white hover:bg-transparent border hover:text-orange-500
+              hover:border-orange-500 duration-300 transition-all"
             >
               Submit
             </button>

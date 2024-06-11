@@ -48,7 +48,7 @@ const Page: NextPage<ComponentProps> = ({ eventData, ticketsData }) => {
           </div>
           <div className="w-full">
             <div className="flex flex-wrap justify-start items-center space-x-2 mt-4">
-              <h3 className="text-gray-900 text-3xl font-bold capitalize ">{event.title}</h3>
+              <h3 className="text-[#faedcd] text-3xl font-bold capitalize ">{event.title}</h3>
 
               {!event.minted ? (
                 <span className="bg-orange-600 text-white rounded-xl px-4">Open</span>
@@ -81,7 +81,7 @@ const Page: NextPage<ComponentProps> = ({ eventData, ticketsData }) => {
                 )}
 
                 {Date.now() > event.startsAt && getExpiryDate(event.endsAt) !== 0 && (
-                  <p className="text-orange-500">Ends in {getExpiryDate(event.endsAt)} days</p>
+                  <p className="text-[#faedcd]">Ends in {getExpiryDate(event.endsAt)} days</p>
                 )}
 
                 {Date.now() > event.endsAt && <p className="text-red-500">Expired</p>}
@@ -92,7 +92,7 @@ const Page: NextPage<ComponentProps> = ({ eventData, ticketsData }) => {
               {event.endsAt > Date.now() && (
                 <button
                   onClick={() => dispatch(setTicketModal('scale-100'))}
-                  className="bg-orange-500 p-2 rounded-full py-3 px-10
+                  className="bg-[#bc6c25] p-2 rounded-full py-3 px-10
                 text-white hover:bg-transparent border hover:text-orange-500
                 hover:border-orange-500 duration-300 transition-all"
                 >

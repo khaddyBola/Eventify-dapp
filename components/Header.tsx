@@ -6,10 +6,10 @@ import { FaTimes } from 'react-icons/fa'
 
 const Header: React.FC = () => {
   return (
-    <header className="h-20 shadow-md p-5 sm:px-0 fixed z-50 top-0 right-0 left-0 bg-white">
+    <header className="h-20 shadow-md p-5 sm:px-0 fixed z-50 top-0 right-0 left-0 bg-[#faedcd]">
       <main className="lg:w-2/3 w-full mx-auto flex justify-between items-center flex-wrap">
-        <Link href={'/'} className="text-lg font-bold">
-          Event X
+        <Link href={'/'} className="text-lg text-[#bc6c25] font-bold">
+          Eventi-Fy
         </Link>
         <Desktop />
         <Mobile />
@@ -19,16 +19,16 @@ const Header: React.FC = () => {
 }
 
 const Desktop: React.FC = () => (
-  <div className="hidden sm:flex justify-end items-center space-x-2 md:space-x-4 mt-2 md:mt-0">
+  <div className="hidden text-[#bc6c25] sm:flex justify-end items-center space-x-2 md:space-x-4 mt-2 md:mt-0">
     <Link
       href={'/events/create'}
-      className="text-md hover:text-orange-500 duration-300 transition-all"
+      className="text-md hover:text-[#fcbf49] duration-300 transition-all"
     >
       Create
     </Link>
     <Link
       href={'/events/personal'}
-      className="text-md hover:text-orange-500 duration-300 transition-all"
+      className="text-md hover:text-[#fcbf49] duration-300 transition-all"
     >
       Personal
     </Link>
@@ -47,7 +47,7 @@ const Mobile: React.FC = () => {
       </button>
       {isOpen && (
         <div
-          className="flex flex-col space-y-4 fixed top-0 right-0 h-full w-64 bg-white
+          className="flex flex-col space-y-4 fixed text-[#bc6c25] top-0 right-0 h-full w-64 bg-white
         shadow-md p-4 transition duration-500 ease-in-out transform-all"
         >
           <div className="flex justify-end">
@@ -58,14 +58,14 @@ const Mobile: React.FC = () => {
 
           <Link
             href={'/events/create'}
-            className="text-md hover:text-orange-500 duration-300 transition-all block py-1"
+            className="text-md hover:text-[#fcbf49] duration-300 transition-all block py-1"
           >
             Create
           </Link>
 
           <Link
             href={'/events/personal'}
-            className="text-md hover:text-orange-500 duration-300 transition-all block py-1"
+            className="text-md hover:text-[#fcbf49] duration-300 transition-all block py-1"
           >
             Personal
           </Link>

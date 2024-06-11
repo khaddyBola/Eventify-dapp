@@ -200,9 +200,8 @@ const EventActions: React.FC<{ event: EventStruct }> = ({ event }) => {
     <Menu as="div" className="inline-block text-left text-gray-300 relative">
       <Menu.Button
         className="bg-transparent p-2 rounded-full py-3 px-5
-        text-black hover:bg-orange-500 hover:text-white
-        duration-300 transition-all flex justify-start items-center
-        space-x-2 border border-black hover:border-orange-500"
+        text-black hover:bg-[#faedcd] duration-300 transition-all flex justify-start items-center
+        space-x-2 border hover:text-[#d4a373]"
       >
         <BiDotsVerticalRounded size={17} /> <span>More</span>
       </Menu.Button>
@@ -217,9 +216,8 @@ const EventActions: React.FC<{ event: EventStruct }> = ({ event }) => {
               {({ active }) => (
                 <Link
                   href={'/events/edit/' + event.id}
-                  className={`flex justify-start items-center space-x-1 ${
-                    active ? 'text-orange-700' : 'text-black'
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  className={`flex justify-start items-center space-x-1 ${active ? 'text-orange-700' : 'text-black'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                 >
                   <GrEdit size={17} />
                   <span>Edit</span>
@@ -229,9 +227,8 @@ const EventActions: React.FC<{ event: EventStruct }> = ({ event }) => {
             <Menu.Item>
               {({ active }) => (
                 <button
-                  className={`flex justify-start items-center space-x-1 ${
-                    active ? 'bg-green-700' : 'text-green-700'
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  className={`flex justify-start items-center space-x-1 ${active ? 'bg-green-700' : 'text-green-700'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   onClick={handlePayout}
                 >
                   <FiDollarSign size={17} />
@@ -242,9 +239,8 @@ const EventActions: React.FC<{ event: EventStruct }> = ({ event }) => {
             <Menu.Item>
               {({ active }) => (
                 <button
-                  className={`flex justify-start items-center space-x-1 ${
-                    active ? 'bg-red-700' : 'text-red-700'
-                  } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  className={`flex justify-start items-center space-x-1 ${active ? 'bg-red-700' : 'text-red-700'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   onClick={handleDelete}
                 >
                   <BsTrash3 size={17} />

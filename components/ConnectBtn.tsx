@@ -36,8 +36,8 @@ const ConnectBtn: React.FC<{ networks?: boolean }> = ({ networks }) => {
               if (!connected) {
                 return (
                   <button
-                    className="bg-transparent border border-orange-500 hover:bg-orange-600
-                        py-2 px-6 text-orange-500 hover:text-white rounded-full
+                    className="bg-transparent border border-[#d4a373] hover:bg-[#fefae0]
+                    py-2 px-6 text-[#d4a373] hover:text-[#d4a373] rounded-full
                         transition duration-300 ease-in-out"
                     onClick={openConnectModal}
                     type="button"
@@ -50,8 +50,8 @@ const ConnectBtn: React.FC<{ networks?: boolean }> = ({ networks }) => {
               if (chain.unsupported && networks) {
                 return (
                   <button
-                    className="bg-transparent border border-orange-500 hover:bg-orange-600
-                        py-2 px-6 text-orange-500 hover:text-white rounded-full
+                    className="bg-transparent border border-[#d4a373] hover:bg-[#fefae0]
+                    py-2 px-6 text-[#d4a373] hover:text-[#d4a373] rounded-full
                         transition duration-300 ease-in-out"
                     onClick={openChainModal}
                     type="button"
@@ -67,8 +67,8 @@ const ConnectBtn: React.FC<{ networks?: boolean }> = ({ networks }) => {
                     <button
                       onClick={openChainModal}
                       style={{ display: 'flex', alignItems: 'center' }}
-                      className="bg-transparent border border-orange-500 hover:bg-orange-600
-                    py-2 px-6 text-orange-500 hover:text-white rounded-full
+                      className="bg-transparent border border-[#d4a373] hover:bg-[#fefae0]
+                    py-2 px-6 text-[#d4a373] hover:text-[#d4a373] rounded-full
                     transition duration-300 ease-in-out"
                       type="button"
                     >
@@ -98,8 +98,8 @@ const ConnectBtn: React.FC<{ networks?: boolean }> = ({ networks }) => {
                   )}
 
                   <button
-                    className="bg-transparent border border-orange-500 hover:bg-orange-600
-                    py-2 px-6 text-orange-500 hover:text-white rounded-full
+                    className="bg-transparent border border-[#d4a373] hover:bg-[#fefae0]
+                    py-2 px-6 text-[#d4a373] hover:text-[#d4a373] rounded-full
                     transition duration-300 ease-in-out"
                     onClick={openAccountModal}
                     type="button"
